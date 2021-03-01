@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul id="list">
+    <li>joao</li>
+    <li>jonas</li>
+    <li>joana</li>
+
+  </ul>
+
+  <script>
+
+    const list = document.querySelectorAll("#list li");
+    const listArray = Array.from(list) // passa li de um nodeList para array, com todas suas propriedades
+    console.log(listArray); // mostra as li's
+
+    const nomes = listArray.map((nome) => nome.textContent); // faz um map no listArray
+    console.log(nomes); // monstra os nomes nas li's
+
+    const text = "roberto";
+    console.log(Array.from(text)) // transforma o texto em um array(separa as letras em posições do array)
+
+  </script>
+</body>
+
+</html>
